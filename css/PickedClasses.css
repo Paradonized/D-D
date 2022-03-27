@@ -1,0 +1,112 @@
+
+body{
+  background: #e8e8e8;
+}
+
+h1{
+  font-family: Verdana, sans-serif;
+  font-style: oblique;
+  -webkit-text-stroke: 2px black;
+  font-weight: 500;
+  color:red;
+  font-size:45px;
+  margin: 0 30px;
+  padding: 100px 0 0 0;
+  line-height: 1.5;
+  padding-top: 10%;
+  padding-bottom:1%;
+  text-align: center;
+}
+
+.picked-class-body p{
+  padding: 5px 35px 10px 35px;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.picked-class-body p::first-letter{
+  Color:red;
+  font-size: 25px;
+  font-weight: bold;
+  text-shadow:1px 1px 1px black;
+}
+
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.iframe-fix{
+  max-width: 800px;
+
+
+  position: relative;
+  top: 0; right: 0;
+  bottom: 0; left: 0;
+  margin: auto;
+}
+
+.back-button{
+    color: white;
+    background: #A91C11;
+    border: 2px solid white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    padding: 7px 13px;
+    margin: 25px 20px 25px 20px;
+}
+
+.back-button:hover{
+  background: red;
+}
+
+@media (max-width: 596px){
+  h1{
+      padding-top: 25%;
+      padding-bottom: 2%;
+  }
+}
+
+@media (max-width: 963px){
+  h1{
+      padding-top: 16%;
+      padding-bottom: 1%;
+  }
+}
+
+@media (max-width: 963px){
+  h1{
+      padding-top: 16%;
+      padding-bottom: 1%;
+  }
+}
+
+@media (max-width: 1080px) and (min-width:964px){
+  h1{
+    padding-top: 12%;
+    padding-bottom: 2%;
+  }
+}
+
+@media (max-width: 1114px) and (min-width:1080px){
+  h1{
+    padding-top: 10%;
+    padding-bottom: 2%;
+  }
+}

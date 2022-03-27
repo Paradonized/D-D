@@ -1,0 +1,118 @@
+body{
+    background: #e8e8e8;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 50px;
+    padding-top: 10%;
+    padding-bottom:1%;
+    text-align: center;
+}
+
+.slider{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: #e8e8e8;
+}
+
+.slider .img-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease;
+    transition-delay: 0s;
+    z-index: 1;
+    clip-path: circle(0px at center);
+}
+
+.slider input[type="radio"]:checked + .img-box{
+    z-index: 10;
+    clip-path: circle(1000px at center);
+    transition-delay: 0.75s;
+}
+
+.slider .img-box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider .img-box .content{
+    position: relative;
+    text-align: center;
+    max-width: 800px;
+}
+
+.slider .img-box .content h2{
+    font-size: 6em;
+    line-height: 1em;
+    color: white;
+    -webkit-text-stroke: 2px black;
+}
+
+.slider .img-box .content p{
+    font-size: 26px;
+    color: white;
+    -webkit-text-stroke: 0.5px black;
+    padding-top: 25px;
+}
+
+.slider input[type="radio"]{
+    position: relative;
+    z-index: 2000;
+    margin: 5px;
+    margin-bottom: 40px;
+    outline: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+    .slider .img-box{
+        padding: 40px;
+    }
+    .slider .img-box .content h2{
+        font-size: 3em;
+    }
+
+}
+
+@media (max-width: 596px){
+    h1{
+        padding-top: 25%;
+        padding-bottom: 2%;
+    }
+}
+
+@media (max-width: 963px){
+    h1{
+        padding-top: 16%;
+        padding-bottom: 0;
+    }
+}
+@media (max-width: 1080px) and (min-width:964px){
+    h1{
+      padding-top: 14%;
+      padding-bottom: 0;
+    }
+}
+@media (max-width: 958px){
+    .slider .img-box .content p{
+        font-size: 20.5px;
+        color: white;
+        padding-top: 25px;
+    }
+}
