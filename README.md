@@ -1,6 +1,8 @@
 # DnD fan site
 A site made with HTML and CSS (with some JS).
-My first work in University. All is hard-coded, which is bad to say at least.
+My first work in University. All is hard-coded, which is bad to say at least.<br />
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Paradonized/D-D?style=plastic">
+
 
 ## Screenshots
 ![DnDIndexScr](https://user-images.githubusercontent.com/85744016/175387513-314c7910-e324-474c-8b12-9a87e2754511.png)
